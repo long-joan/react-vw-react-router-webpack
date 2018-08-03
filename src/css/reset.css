@@ -1,0 +1,35 @@
+/* reset */
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,img,
+form,fieldset,legend,label,input,button,select,textarea,
+pre,code,section,header,article {
+  margin:0;
+  padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+}
+ul,ol {
+  list-style:none;
+}
+input,button,select,textarea {
+  outline:none;
+}
+label,input,select,textarea,button:disabled {
+  -webkit-tap-highlight-color: transparent;
+}
+textarea {
+    resize: vertical;
+}
+img,iframe {
+  border:0 none;
+}
+body,input,button,select,textarea {
+  font-family:Arial,Helvetica,sans-serif,"宋体";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+}
+a {
+  text-decoration: none;
+}

@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component }from 'react';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
+import Home from './js/home';
+import Children from './js/children';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        hello vw
-      </div>
-    );
-  }
+import './css/App.css';
+export default class App extends Component {
+	render(){
+		return (
+			<HashRouter>
+				<Switch>
+          <Route path="/home" component={Home} ></Route>
+          <Route path="/children" component={Children}></Route>
+          <Redirect from="/" to="/home" />
+				</Switch>
+			</HashRouter>
+		)
+	}
 }
-export default App;
